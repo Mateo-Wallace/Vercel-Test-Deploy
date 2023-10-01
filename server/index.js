@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 
-app.use(express.urlencoded({ extended: true }));
+// app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // app.use(cors())
 
@@ -18,7 +18,7 @@ app.use(express.json());
 //   app.use(express.static(path.join(__dirname, '../client/.next')));
 // }
 
-app.use(routes);
+// app.use(routes);
 app.use("/home", (req, res) => {
   res.send("Server is running")
 })
